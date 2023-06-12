@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import { Button } from '@/components/ui/button';
+import {Home, PaintBucket, BadgePlus} from 'lucide-react'
 
 import {
   Card,
@@ -36,7 +37,6 @@ import {
         		<h2 class="text-2xl md:text-3xl font-semibold title-font text-white">
           		We focus on customer satisfaction and quality
         		</h2>
-
         		<p class="mt-4 text-slate-200">
         			We work around your busy schedule and consult with you on all aspects of 
         			color selection and color coordination for your project to ensure that the 
@@ -44,11 +44,57 @@ import {
         			that stand head and shoulders above the rest. We combine the industry's best paint with
         			our passion for detail to exceed your expectations.  
         		</p>
-        		
-      		<Button variant="outline" className='text-white mt-4'>About Us</Button> 
+      			<Button variant="outline" className='text-white mt-4'>About Us</Button> 
       		</div>
     		</div>
   		</div>
+		</section>
+		<section>
+  		<div class="px-4 py-16 md:px-8 lg:px-16 xl:px-32 text-center sm:text-left">
+        <h2 class="text-xs text-slate-800 tracking-widest font-light title-font mb-1">OUR SERVICES</h2>
+        <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-between">
+        	<h2 class="text-2xl md:text-3xl font-semibold title-font mb-2 sm:mb-0">
+          	A wide range of services        
+        	</h2>
+        	<Button className='text-white'>Our Services</Button> 
+        </div>
+        <div class="flex md:flex-nowrap flex-wrap sm:justify-between gap-4 mt-4">
+					<Card className='md:w-1/3  w-full'>
+  					<CardHeader>
+  						<div class="flex justify-center sm:justify-start">
+  						  <Home size="32" color='#6F785A'/>
+  						</div>
+							<CardTitle className='text-xl'>Commercial & Residential</CardTitle>
+    					<CardContent>
+    						No matter the job, we are confident we are the right team for you. 
+    						A fresh coat of paint can be a perfect, cost-effective option if you’re looking to breathe new life into your home or business. 
+    					</CardContent>
+  					</CardHeader>
+					</Card>
+					<Card className='md:w-1/3  w-full'>
+  					<CardHeader>
+  						<div class="flex justify-center sm:justify-start">
+  						  <PaintBucket size="32" color='#6F785A'/>
+  						</div>
+							<CardTitle className='text-xl'>Interior & Exterior</CardTitle>
+    					<CardContent>
+    						We do interior and exterior painting, whether you’re looking to transform a space or simply update it to a more modern look, our professional team can make it happen. We use the highest quality paint and will work with you to find the right color for your home.
+    					</CardContent>
+  					</CardHeader>
+					</Card>
+					<Card className='md:w-1/3  w-full'>
+  					<CardHeader>
+  						<div class="flex justify-center sm:justify-start">
+  						  <BadgePlus size="32" color='#6F785A'/>
+  						</div>
+							<CardTitle className='text-xl'>Additional Services</CardTitle>
+    					<CardContent>
+    						From custom paint jobs such as cabinets, sheds, and furniture restoration to power washing, we have you covered.  We also offer fence painting or staining, deck finishing/painting/staining, and a variety of other exterior painting services
+    					</CardContent>
+  					</CardHeader>
+					</Card>
+				</div>
+			</div>
 		</section>
 	</main>
 </Layout>
