@@ -1,0 +1,29 @@
+---
+import {Button} from "./ui/button"
+---
+
+<div
+  class="relative overflow-hidden bg-no-repeat bg-cover rounded-lg"
+  style="
+  background-position: 50%;
+  background-image: url('/house.jpg');
+  height: 600px; 
+"
+>
+  <div
+    class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+    style="background-color: rgba(0, 0, 0, 0.7)"
+  >
+    <div class="flex justify-center items-center h-full">
+      <div class="text-center text-white px-6 md:px-12">
+        <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold mb-4">
+          The Quality Work You Deserve
+        </h1>
+      <div>
+        <Button>Get a Free Quote</Button> 
+        <Button variant="outline" className="ml-2">View Our Work</Button> 
+      </div>
+      </div> 
+    </div>
+  </div>
+</div>
