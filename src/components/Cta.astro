@@ -1,0 +1,35 @@
+---
+import {Button} from "./ui/button"
+import {Phone} from "lucide-react"
+---
+
+<div
+  class="relative overflow-hidden bg-no-repeat bg-cover rounded-lg"
+  style="
+  background-position: 50%;
+  background-image: url('/house.jpg');
+  height: 300px; 
+  "
+>
+  <div
+    class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+    style="background-color: rgba(0, 0, 0, 0.75)"
+  >
+    <div class="flex justify-center items-center h-full">
+      <div class="text-center text-white px-6 md:px-12">
+        <p class="tracking-widest mb-4 font-light text-xs md:text-sm md:text-md">LET'S CONNECT</p>
+        <h1 class="text-2xl md:text-3xl xl:text-4xl font-bold mb-4">
+          We can help you create the spaces you've always wanted
+        </h1>
+        <div class="flex-wrap sm:flex justify-center items-center">
+          <div class="inline-flex items-center">
+            <Phone size="20"/>
+            <p class="font-medium sm:font-semibold text-xl sm:text-2xl tracking-wide pl-2">(240)418-8642</p>
+          </div>
+          <p class="py-2 sm:px-4 font-light">Or</p>
+          <Button>Get a Free Quote</Button> 
+        </div>
+      </div> 
+    </div>
+  </div> 
+</div>
