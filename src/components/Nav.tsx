@@ -26,7 +26,7 @@ export default function Nav() {
   const matches = useMediaQuery("(min-width:1024px)");
 
   return (
-    <nav className="sticky top-0 z-50 bg-slate-100 px-4 md:px-8 lg:px-16 xl:px-32">
+    <nav className="sticky top-0 z-50 bg-white px-4 md:px-8 lg:px-16 xl:px-32">
       <div className="z-20">
         <div className="">
           <div className="flex items-center justify-between py-4">
@@ -85,7 +85,7 @@ export default function Nav() {
               <motion.div
                 animate={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: 25 }}
-                className="bg-slate-100 flex fixed bottom-0 left-0 flex h-screen w-full items-center justify-center"
+                className="bg-white flex fixed bottom-0 left-0 flex h-screen w-full items-center justify-center"
               >
                 <motion.div
                   variants={navMotion}
