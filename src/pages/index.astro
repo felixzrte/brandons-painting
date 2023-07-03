@@ -9,8 +9,6 @@ import Testimonials from '../components/Testimonials.astro'
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -55,9 +53,12 @@ import {
               above the rest. We combine the industry's best paint with our
               passion for detail to exceed your expectations.
             </p>
-            <Button variant="outline" className="text-white mt-4">
-              About Us
-            </Button>
+            <a href="/About">
+              <Button variant="outline" className="text-white mt-4">
+                About Us
+              </Button>
+
+            </a>
           </div>
         </div>
       </div>
@@ -79,7 +80,9 @@ import {
           >
             A wide range of services
           </h2>
-          <Button className="text-white">Our Services</Button>
+          <a href="/Services">
+            <Button className="text-white">Our Services</Button>
+          </a>        
         </div>
         <div
           class="flex md:flex-nowrap flex-wrap sm:justify-between gap-4 mt-4"
