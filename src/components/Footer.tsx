@@ -3,12 +3,12 @@ import logo from '/bplogo.png';
 
 const Footer = () => {
   return (
-    <footer className=" bg-white py-12">
-      <div className="px-4 py-24 md:px-8 lg:px-16 xl:px-32">
+    <footer className=" bg-white">
+      <div className="px-4 py-12 md:px-8 lg:px-16 xl:px-32">
         <div className="container flex w-full flex-col gap-14">
           <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
             <a href="/" className="mb-10">
-              <img src={logo} alt="logo" className="w-28 lg:w-32" />
+              <img src={logo} alt="logo" className="w-24 lg:w-28" />
             </a>
 
             <div className="flex flex-wrap gap-10 sm:justify-between md:flex-1">

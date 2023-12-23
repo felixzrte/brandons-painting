@@ -1,14 +1,14 @@
-import { motion } from "framer-motion";
-import { useState } from "react";
-import logo from "/bplogo.png";
-import { useMediaQuery } from "../util/useMediaQuery";
-import { Button } from "@/components/ui/button";
+import { motion } from 'framer-motion';
+import { useState } from 'react';
+import logo from '/bplogo.png';
+import { useMediaQuery } from '../util/useMediaQuery';
+import { Button } from '@/components/ui/button';
 const navMotion = {
   visible: {
     opacity: 1,
 
     transition: {
-      when: "beforeChildren",
+      when: 'beforeChildren',
       staggerChildren: 0.15,
     },
   },
@@ -23,22 +23,22 @@ const itemMotion = {
 
 export default function Nav() {
   const [toggled, setToggled] = useState(false);
-  const matches = useMediaQuery("(min-width:1024px)");
+  const matches = useMediaQuery('(min-width:1024px)');
 
   return (
-    <nav className="sticky top-0 z-50 bg-white px-4 md:px-8 lg:px-16 xl:px-32">
+    <nav className="sticky top-0 z-50 bg-white px-4 md:px-8 lg:px-16 xl:px-32 border-b border-gray-200">
       <div className="z-20">
         <div className="">
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
             <div className="relative">
               <a href="/">
-                <img src={logo} className="w-20 lg:w-24" />
+                <img src={logo} className="w-20" />
               </a>
             </div>
             {/* Nav Links */}
             {matches && (
-              <div className="flex gap-12 font-light lg:text-base">
+              <div className="flex gap-12">
                 <a href="/">
                   <Button variant="link">Home</Button>
                 </a>
@@ -85,7 +85,7 @@ export default function Nav() {
               <motion.div
                 animate={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: 25 }}
-                className="bg-white flex fixed bottom-0 left-0 flex h-screen w-full items-center justify-center"
+                className="bg-white fixed bottom-0 left-0 flex h-screen w-full items-center justify-center"
               >
                 <motion.div
                   variants={navMotion}
